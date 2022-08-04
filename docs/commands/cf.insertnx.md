@@ -45,19 +45,6 @@ Adding items requires up to 2 memory accesses per `sub-filter`.
 But as the filter fills up, both locations for an item might be full. The filter
 attempts to `Cuckoo` swap items up to `maxIterations` times.
 
-### Returns
-
-An array of booleans (as integers) corresponding to the items specified. Possible
-values for each element are:
-
-* `> 0` if the item was successfully inserted
-* `0` if the item already existed *and* `INSERTNX` is used.
-* `<0` if an error occurred
-
-Note that for `CF.INSERT`, the return value is always be an array of `>0` values,
-unless an error occurs.
-
-
 @return
 
 @array-reply of @integer-reply - where "1" means the item has been added to the filter,
