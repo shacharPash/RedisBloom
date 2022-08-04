@@ -20,7 +20,7 @@ the cost of more verbosity.
 
 @return
 
-@integer-reply - "1" if executed correctly, or @error-reply otherwise.
+An array of @integer-reply - "1" if executed correctly, or @error-reply otherwise.
 
 @examples
 
